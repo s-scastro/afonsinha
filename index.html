@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let</title>
+    <style>
+         body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #fd0303;
+            text-align: center;
+        }
+        #titulo {
+            text-align: center;
+            padding: 20px;
+        }
+        .caixa h1 {
+            color: rgb(92, 203, 255);
+            text-align: center;
+            padding: 20px;
+        }
+        </style>
+</head>
+
+<body>
+    <h2>Soma de dois números</h2>
+
+    <input type="number" id="num1" placeholder="Digite o primeiro número">
+    <input type="number" id="num2" placeholder="Digite o segundo número">
+    <button onclick="somar()">Somar</button>
+  
+    <p>Resultado: <span id="resultado">0</span></p>
+  
+    <script>
+      function somar() {
+        const n1 = parseFloat(document.getElementById("num1").value);
+        const n2 = parseFloat(document.getElementById("num2").value);
+        const resultado = n1 + n2;
+  
+        document.getElementById("resultado").textContent = resultado;
+      }
+      </script>
+      
+    <div class="caixa1">
+        <h1 ind="titulo">index </h1>
+        <h1>Sarah</h1>
+    </div>
+</body>
+</html>
