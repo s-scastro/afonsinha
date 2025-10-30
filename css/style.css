@@ -1,0 +1,44 @@
+/* Estilo do corpo da página */
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #ffe6f2;
+    color: #333;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background: #ff69b4;
+    color: white;
+    padding: 10px;
+  }
+  
+  /* Imagem */
+  img {
+    width: 250px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  /* Botão */
+  button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #ff1493;
+  }
+  
+  /* Rodapé */
+  footer {
+    background: #ff69b4;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
