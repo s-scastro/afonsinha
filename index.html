@@ -1,52 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Let</title>
-    <style>
-         body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #fd0303;
-            text-align: center;
-        }
-        #titulo {
-            text-align: center;
-            padding: 20px;
-        }
-        .caixa h1 {
-            color: rgb(92, 203, 255);
-            text-align: center;
-            padding: 20px;
-        }
-        </style>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divas Pop News</title>
+
+  <style>
+    /* Estilo do corpo da página */
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #ffe6f2;
+      color: #333;
+    }
+
+    /* Cabeçalho */
+    header {
+      background: #ff69b4;
+      color: white;
+      padding: 10px;
+    }
+
+    /* Imagem */
+    img {
+      width: 250px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    /* Botão */
+    button {
+      background: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ff1493;
+    }
+
+    /* Rodapé */
+    footer {
+      background: #ff69b4;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
-
 <body>
-    <h2>Soma de dois números</h2>
+  <!-- Cabeçalho do site -->
+  <header>
+    <h1> Divas Pop News </h1>
+  </header>
 
-    <input type="number" id="num1" placeholder="Digite o primeiro número">
-    <input type="number" id="num2" placeholder="Digite o segundo número">
-    <button onclick="somar()">Somar</button>
-  
-    <p>Resultado: <span id="resultado">0</span></p>
-  
-    <script>
-      function somar() {
-        const n1 = parseFloat(document.getElementById("num1").value);
-        const n2 = parseFloat(document.getElementById("num2").value);
-        const resultado = n1 + n2;
-  
-        document.getElementById("resultado").textContent = resultado;
-      }
-      </script>
-      
-    <div class="caixa1">
-        <h1 ind="titulo">index </h1>
-        <h1>Sarah</h1>
-    </div>
+  <!-- Parte principal com botão -->
+  <main>
+    <h2>As novidades das maiores divas do pop!</h2>
+    <img src="https://d.newsweek.com/en/full/2623800/kanye-west-interrupts-taylor-swift-vmas-speech.png?w=1200&f=d90177ab4189d26d6d62aaf5e282cc1e" 
+    alt="Cantora pop">
+    <button id="botao">Ver notícia</button>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Divas Pop News</p>
+  </footer>
+
+  <script>
+    // Quando clicar no botão, mostra uma mensagem
+    document.getElementById("botao").addEventListener("click", function() {
+      alert("Nova notícia: Kanye West e Taylor Swift novo casal do ano!?");
+    });
+  </script>
 </body>
 </html>
